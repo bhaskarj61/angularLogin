@@ -1,0 +1,23 @@
+<h1>Your form details</h1>
+<table id="showData">
+  <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Contact</th>
+      <th>Password</th>
+  </tr>
+  <tr>
+    <td>{{data.firstName}}</td>
+    <td>{{data.lastName}}</td>
+    <td>{{data.email}}</td>
+    <td>{{data.contact}}</td>
+    <td>{{data.password}}</td>
+  </tr>
+ 
+</table>
+<br/>
+<button id="editButton" (click)="back()">Edit</button>
+<button id="submitButton">Final Submit</button>
+
+
