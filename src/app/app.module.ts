@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { ShowDetailComponent } from './show-detail/show-detail.component';
+import { LoginService } from './login.service';
 
 const routes: Routes=[
   {
@@ -29,7 +30,7 @@ const routes: Routes=[
     ReactiveFormsModule,
     RouterModule.forRoot(routes),
   ],
-  providers: [],
+  providers: [LoginService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
